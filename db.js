@@ -1,5 +1,4 @@
 const { Sequelize } = require('sequelize')
-import 'dotenv/config';
 
 // Database
 const sequelize = new Sequelize(
