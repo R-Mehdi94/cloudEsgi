@@ -2,9 +2,11 @@ databases:
   - name: cloudEsgi
     databaseName: cloudesgi 
     user: cloudsgi 
+    plan: free<
 
 services:
   - type: web
+    plan: free
     runtime: node
     name: cloudEsgi
     repo: https://github.com/R-Mehdi94/cloudEsgi
