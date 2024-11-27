@@ -1,0 +1,17 @@
+databases:
+  - name: cloudEsgi
+    databaseName: cloudEsgi 
+    user: cloudsgi 
+
+services:
+  - type: web
+    runtime: nodejs
+    name: cloudEsgi
+    repo: https://github.com/R-Mehdi94/cloudEsgi
+    buildCommand: npm install 
+    startCommand: npm run start
+    envVars:
+      - key: BDDURL
+        fromDatabase: 
+          name: cloudEsgi
+          property: connectionString
