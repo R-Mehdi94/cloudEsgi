@@ -1,16 +1,13 @@
 databases:
   - name: cloudEsgi
-    region: frankfurt
     databaseName: cloudesgi 
     user: cloudsgi 
     plan: free
 
-    
 services:
   - type: web
     plan: free
     runtime: node
-    region: frankfurt
     name: cloudEsgi
     repo: https://github.com/R-Mehdi94/cloudEsgi
     buildCommand: npm install 
